@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="check_now_button">Check Now</string>
+    <string name="imageView_bmiIcon_desc">bmiIcon</string>
+    <string name="textView_welcome_text">Welcome to BMi Calculator</string>
+    <string name="textView_cm">cm</string>
+    <string name="textView_iam">I\'m</string>
+    <string name="textView_female">Female</string>
+    <string name="textView_ft">ft</string>
+    <string name="textView_male">Male</string>
+    <string name="button_decrement">-</string>
+    <string name="button_increment">+</string>
+    <string name="switch_height_description">switch_height</string>
+    <string name="gender_description">gender</string>
+    <string name="numberText">1</string>
+    <string name="age_in_year_text">Age(In Year)</string>
+    <string name="height_text">Height</string>
+    <string name="weight_kg_text">Weight(kg)</string>
+    <string name="numbertext">45</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="decrement_button_age">-</string>
+    <string name="increment_button_age">+</string>
+    <string name="your_bmi_index_text">Your Bmi Index</string>
+    <string name="copywrite_text">Developed by Chaitra Revesh</string>
+    <string name="re_calculate_button">RE-CALCULATE</string>
+</resources>

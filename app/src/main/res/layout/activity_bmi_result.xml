@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_bmi_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/buttonColor"
+            android:textFontWeight="800"
+            android:textSize="38sp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/your_bmi_index_text"
+            android:textAlignment="center"
+            android:textColor="@color/limeColor"
+            android:textFontWeight="800"
+            android:textSize="24sp"
+            tools:ignore="TextSizeCheck,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/text_view_health_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textFontWeight="900"
+            android:textSize="24sp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/text_view_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textFontWeight="800"
+            android:textSize="22sp"
+            tools:ignore="UnusedAttribute" />
+
+        <Button
+            android:id="@+id/button_recalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="sans-serif"
+            android:paddingHorizontal="36dp"
+            android:paddingVertical="8dp"
+            android:text="@string/re_calculate_button"
+            android:textColor="@color/white"
+            android:textFontWeight="900"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck,UnusedAttribute" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/copywrite_text" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:elevation="2sp"
+                android:foreground="@color/cardview_shadow_end_color"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_view_age_text"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:paddingTop="10dp"
+                        android:text="@string/age_in_year_text"
+                        android:textAlignment="center"
+                        android:textColor="#689F38"
+                        android:textFontWeight="800"
+                        android:textSize="22sp"
+                        tools:ignore="UnusedAttribute" />
+
+                    <TextView
+                        android:id="@+id/text_view_age"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_age_text"
+                        android:fontFamily="sans-serif"
+                        android:padding="15dp"
+                        android:text="@string/numberText"
+                        android:textAlignment="center"
+                        android:textFontWeight="800"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        tools:ignore="UnusedAttribute" />
+
+                    <Button
+                        android:id="@+id/button_age_decrement"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/text_view_age"
+                        android:layout_toEndOf="@id/button_age_increment"
+                        android:background="@drawable/round_button"
+                        android:backgroundTint="@color/buttonColor"
+                        android:padding="10dp"
+                        android:text="@string/decrement_button_age"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <Button
+                        android:id="@+id/button_age_increment"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/text_view_age"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/round_button"
+                        android:backgroundTint="@color/buttonColor"
+                        android:padding="10dp"
+                        android:text="@string/increment_button_age"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:elevation="2sp"
+                android:foreground="@color/cardview_shadow_end_color"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_view_weight_text"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:paddingTop="10dp"
+                        android:text="@string/weight_kg_text"
+                        android:textAlignment="center"
+                        android:textColor="#689F38"
+                        android:textFontWeight="800"
+                        android:textSize="22sp"
+                        tools:ignore="UnusedAttribute" />
+
+                    <TextView
+                        android:id="@+id/text_view_weight"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_view_weight_text"
+                        android:fontFamily="sans-serif"
+                        android:padding="15dp"
+                        android:text="@string/numbertext"
+                        android:textAlignment="center"
+                        android:textFontWeight="800"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        tools:ignore="UnusedAttribute" />
+
+                    <Button
+                        android:id="@+id/button_weight_increment"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/text_view_weight"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/round_button"
+                        android:backgroundTint="@color/buttonColor"
+                        android:padding="10dp"
+                        android:text="@string/button_increment"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button_weight_decrement"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/text_view_weight"
+                        android:layout_toEndOf="@id/button_weight_increment"
+                        android:background="@drawable/round_button"
+                        android:backgroundTint="@color/buttonColor"
+                        android:padding="10dp"
+                        android:text="@string/button_decrement"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:layout_margin="2dp"
+            android:elevation="2sp"
+            android:foreground="@color/cardview_shadow_end_color"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/togglebuton_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="sans-serif"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/textView_cm"
+                        android:textFontWeight="800"
+                        android:textSize="22sp"
+                        tools:ignore="UnusedAttribute" />
+
+                    <io.ghyeok.stickyswitch.widget.StickySwitch
+                        android:id="@+id/sticky_switch_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/switch_height_description"
+                        app:ss_animationDuration="600"
+                        app:ss_animationType="line"
+                        app:ss_iconPadding="15dp"
+                        app:ss_iconSize="6dp"
+                        app:ss_leftText="cm"
+                        app:ss_rightText="ft"
+                        app:ss_selectedTextSize="14sp"
+                        app:ss_sliderBackgroundColor="@color/limeGreen"
+                        app:ss_switchColor="@color/buttonColor"
+                        app:ss_textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="sans-serif"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/textView_ft"
+                        android:textFontWeight="800"
+                        android:textSize="22sp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_view_height_text_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/togglebuton_container"
+                    android:fontFamily="monospace"
+                    android:text="@string/height_text"
+                    android:textAlignment="center"
+                    android:textColor="#689F38"
+                    android:textFontWeight="800"
+                    android:textSize="22sp"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/height_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_height_text_heading"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="22sp" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_cm"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/height_text"
+                    android:layout_marginTop="15dp"
+                    android:progress="26"
+                    android:thumbTint="@color/buttonColor" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_feet_inches"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/height_text"
+                    android:gravity="center">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="58dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:cardBackgroundColor="@color/spinnerColor"
+                        app:cardCornerRadius="15dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_feet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="58dp"
+                        android:layout_marginHorizontal="20dp"
+                        app:cardBackgroundColor="@color/spinnerColor"
+                        app:cardCornerRadius="15dp">
+
+                        <Spinner
+                            android:id="@+id/spinnerinches"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/togglebuton_container_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="monospace"
+                android:paddingHorizontal="16dp"
+                android:text="@string/textView_iam"
+                android:textFontWeight="800"
+                android:textSize="50sp"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="sans-serif"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="18dp"
+                android:text="@string/textView_female"
+                android:textFontWeight="800"
+                android:textSize="22sp"
+                tools:ignore="UnusedAttribute" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="18dp">
+
+                <io.ghyeok.stickyswitch.widget.StickySwitch
+                    android:id="@+id/sticky_switch_gender"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/gender_description"
+                    app:ss_animationDuration="600"
+                    app:ss_animationType="line"
+                    app:ss_iconPadding="15dp"
+                    app:ss_iconSize="7dp"
+                    app:ss_leftText="cm"
+                    app:ss_rightText="ft"
+                    app:ss_sliderBackgroundColor="@color/limeGreen"
+                    app:ss_switchColor="@color/buttonColor" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="sans-serif"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="18dp"
+                android:text="@string/textView_male"
+                android:textFontWeight="800"
+                android:textSize="22sp"
+                tools:ignore="UnusedAttribute" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="sans-serif"
+            android:paddingHorizontal="36dp"
+            android:paddingVertical="8dp"
+            android:text="@string/calculate_button"
+            android:textColor="@color/white"
+            android:textFontWeight="900"
+            android:textSize="20sp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+</ScrollView>

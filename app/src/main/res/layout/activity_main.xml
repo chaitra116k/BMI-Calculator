@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="120dp"
+            android:contentDescription="@string/imageView_bmiIcon_desc"
+            android:src="@drawable/bmi_logo_2" />
+
+        <TextView
+            android:id="@+id/textView_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/textView_welcome_text"
+            android:textColor="@color/limeColor"
+            android:textFontWeight="900"
+            android:textSize="38sp"
+            tools:ignore="UnusedAttribute" />
+
+        <Button
+            android:id="@+id/button_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="monospace"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:text="@string/check_now_button"
+            android:textColor="@color/white"
+            android:textFontWeight="900"
+            android:textSize="20sp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+</ScrollView>
